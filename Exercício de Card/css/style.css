@@ -1,0 +1,112 @@
+:root{
+      --radius: 6px;
+}
+
+/*
+Paleta:
+#402F21
+#8C7158
+#BFA893
+#D9CCC5
+#0D0D0D
+*/
+
+.title {
+      color: black;
+
+      font-family: 'Trebuchet MS';
+      font-size: 24pt;
+      font-weight: bold;
+
+      padding: 20px;
+}
+
+#produtos {
+      padding: 20px;
+
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.img {
+      height: 80%;
+}
+
+.card {
+      width: 240px;
+      height: 360px;
+
+      min-width: 250px;
+
+      background-color: #D9CCC5;
+      color: white;
+
+      font-family: 'Trebuchet MS';
+      font-size: large;
+      font-weight: bold;
+
+      margin: 8px;
+      border-radius: var(--radius);
+
+      float: left;
+}
+
+.card-img {
+      width: 100%;
+      height: 50%;
+
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+}
+
+.card-nome {
+      width: 100%;
+      height: 15%;
+
+      background-color: #8C7158;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+}
+
+.card-preco {
+      width: 100%;
+      height: 15%;
+
+      background-color: #8C7158;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+}
+
+.card-comprar {
+      width: 100%;
+      height: 20%;
+
+      background-color: #402F21;
+
+      border-bottom-left-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
+
+      cursor: pointer;
+      user-select: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+}
+
+.card-comprar:hover {
+      background-color: #D9CCC5;
+      color: black;
+}
