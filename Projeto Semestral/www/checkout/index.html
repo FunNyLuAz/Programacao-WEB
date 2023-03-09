@@ -1,0 +1,123 @@
+<html>
+      <head>
+            <meta charset="UTF-8" />
+
+            <title>MuBaK! | Os melhores preços só aqui!</title>
+
+            <link rel="stylesheet" href="../css/style.css">
+            <link rel="stylesheet" href="./css/checkout.css">
+
+            <script src="../js/alert.js" defer></script>
+            <script src="../js/button_enter.js" defer></script>
+            <script src="../js/forms.js" defer></script>
+            <script src="./js/checkout.js" defer></script>
+      </head>
+
+      <body>
+            <div class="navbar">
+                  <div class="header">
+                        <h6>"Mubak: experimente, você vai gostar!"</h6>
+                  </div>
+
+                  <div class="menu">
+                        <div class="menu-icon logo">
+                              <a href="../main"><img src="../img/logo.png"></a>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="main">
+                  <div class="body">
+                        <!--div class="body-header">
+                              <h2>Finalização de compra</h2>
+                        </div-->
+                        <div class="body-body">
+                              <div class="checkout-box">
+                                    <form id="form-checkout">
+                                          <div class="checkout-item">
+                                                <h2>Finalização de compra</h2>
+                                          </div>
+                                          <div class="checkout-item">
+                                                <div class="select checkout">
+                                                      <select name="forma_pagamento" id="forma-pagamento" onchange="verifyIfNoneOption('forma-pagamento', 'button-concluir');verifyIfCartaoCredito('form-checkout')">
+                                                            <option selected disabled value="none">Selecione uma forma de pagamento</option>
+                                                            <option value="cartao-credito">Cartão de crédito</option>
+                                                            <option value="pix">PIX</option>
+                                                      </select>
+                                                </div>
+                                          </div>
+                                          <div class="checkout-item cartao-credito">
+                                                <div class="input">
+                                                      <input type="text" name="numero_cartao" maxlength="16" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                                                      <span><h4>Número do Cartão de Crédito</h4></span>
+                                                </div>
+                                          </div>
+                                          <div class="checkout-item cartao-credito">
+                                                <div class="input">
+                                                      <input type="text" name="nome_proprietario" required>
+                                                      <span><h4>Nome do proprietário</h4></span>
+                                                </div>
+                                          </div>
+                                          <div class="checkout-item cartao-credito">
+                                                <div class="input">
+                                                      <input type="month" name="data_vencimento" required>
+                                                      <span><h4>Data de vencimento</h4></span>
+                                                </div>
+                                          </div>
+                                          <div class="checkout-item cartao-credito">
+                                                <div class="input">
+                                                      <input type="text" name="cvv" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                                                      <span><h4>CVV</h4></span>
+                                                </div>
+                                          </div>
+                                          <div class="checkout-item">
+                                                <button type="button" class="button concluir" id="button-concluir" onclick="concluirCompra('form-checkout')"><h5>Concluir compra</h5></button>
+                                          </div>
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="extrainfo">
+                        <div class="extrainfo-header">
+                              <h3><b>FALE CONOSCO</b></h3>
+                        </div>
+                        <div class="extrainfo-body">
+                              <div class="extrainfo-info">
+                                    <h4>
+                                          <b>Endereço:</b>
+                                          <br>
+                                          Rua Dom Pedro II, 1889 — Centro, Rio de Janeiro/RJ — CEP: 12345-000
+                                          <br>
+                                          <br>
+                                          Horário de atendimento:
+                                          <br>
+                                          08:00 às 18:00 — Segunda a Sábado, horário de Brasília (exceto domingo e feriados)
+                                    </h4>
+                              </div>
+                              <div class="extrainfo-info">
+                                    <h4><b>Central SAC:</b><br>0800-999-9999</h4>
+                              </div>
+                              <div class="extrainfo-info">
+                                    <h4><b>E-mail:</b><br>atendimento@mubak.com.br</h4>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="footer">
+                        <div class="button-icon">
+                              <a href="https://pt-br.facebook.com/"><img src="../img/facebook.svg"></a>
+                        </div>
+                        <div class="button-icon">
+                              <a href="https://twitter.com/?lang=pt-br"><img src="../img/twitter.svg"></a>
+                        </div>
+                        <div class="button-icon">
+                              <a href="https://br.pinterest.com/"><img src="../img/pinterest.svg"></a>
+                        </div>
+                        <div class="button-icon">
+                              <a href="https://www.instagram.com/"><img src="../img/instagram.svg"></a>
+                        </div>
+                  </div>
+            </div>
+      </body>
+</html>

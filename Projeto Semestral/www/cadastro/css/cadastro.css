@@ -1,0 +1,84 @@
+/*BODY*/
+.body {
+      height: fit-content;
+
+      padding-top: 4%;
+      padding-bottom: 4%;
+
+      background-color: white; 
+}
+
+/*
+.body-header {
+      width: 100%;
+      height: 20%;
+
+      padding-bottom: 30px;
+}
+*/
+
+.body-body {
+      width: 100%;
+      height: 80%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.cadastro-box {
+      width: 400px;
+      height: fit-content;
+
+      background-color: #074ad1;
+
+      border-radius: 10px;
+}
+
+.cadastro-item {
+      margin: 40px;
+      margin-left: 50px;
+      margin-right: 50px;
+}
+
+.cadastro-item:has(.button),
+.cadastro-item:has(h5) {
+      display: flex;
+      justify-content: center;
+}
+
+.cadastro-item:last-of-type {
+      margin-bottom: 60px;
+}
+
+.cadastro-item h2 {
+      color: white;
+}
+
+.cadastro-item > h5 {
+      color: white;
+
+      font-size: medium;
+      text-align: center;
+}
+
+.cadastro-item > h5 a {
+      color: white;
+}
+
+.cadastro-item > h5 a:hover {
+      filter: brightness(80%);
+}
+
+.checkoption.cadastro {
+      margin-left: 10px;
+
+      color: white;
+}
+
+.button.cadastro {
+      padding: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+}
+/**/

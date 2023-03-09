@@ -1,0 +1,119 @@
+<html>
+      <head>
+            <meta charset="UTF-8" />
+
+            <title>MuBaK! | Os melhores preços só aqui!</title>
+
+            <link rel="stylesheet" href="../css/style.css">
+            <link rel="stylesheet" href="./css/carrinho.css">
+
+            <script src="../js/button_enter.js" defer></script>
+            <script src="../js/forms.js" defer></script>
+            <script src="./js/carrinho.js" defer></script>
+      </head>
+
+      <body>
+            <div class="navbar">
+                  <div class="header">
+                        <h6>"Mubak: experimente, você vai gostar!"</h6>
+                  </div>
+
+                  <div class="menu">
+                        <div class="menu-icon logo">
+                              <a href="../main"><img src="../img/logo.png"></a>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="main">
+                  <div class="body">
+                        <div class="body-header">
+                              <h2>Carrinho</h2>
+                        </div>
+                        <div class="body-body">
+                              <form id="formProduct">
+                                    <!--Serve para mandar dados para o servidor-->
+                                    <input type="hidden" name="id_produto" id="id_produto"> 
+                                    <input type="hidden" name="quantidade" id="quantidade"> 
+                              </form>
+
+                              <div class="carrinho" id="carrinho">
+                                    <!--TEMPLATE DO PRODUTO-CARD-->
+                                    <!--div class="produto-card" id="produto1">
+                                          <div class="produto-card-header">
+                                                <div class="produto-card-foto">
+                                                      <img src="../../db/img/products/rtx 3050 ti zotac.jpg">
+                                                </div>
+                                          </div>
+                                          <div class="produto-card-body">
+                                                <div class="produto-card-nome"><h3><b>Placa de vídeo RTX 3050 Ti Zotac 6Gb RAM gdja sdgjas gdjg dj asgjgsajgdja sgdjgjasgdjgj   dshjsagdjasdgj  bd asbd jashjasdjasjsag djasgdjasgdjasasg jasgdjasgdjas dsad dasdasdas sad asd as d</b></h3></div>
+                                                <div class="produto-card-preco"><h3><b>R$ 99,99</b></h3></div>
+                                                <div class="produto-card-opcoes">
+                                                      <div class="produto-card-menu">
+                                                            <div class="produto-card-quantidade">
+                                                                  <div class="button quantidade" onclick="updateQuantity('produto1', -1)"><h5>-</h5></div>
+                                                                  <input type="text" value="0" onchange="updateQuantity('produto1', 0)" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                                                                  <div class="button quantidade" onclick="updateQuantity('produto1', 1)"><h5>+</h5></div>
+                                                            </div>
+                                                            <div class="produto-card-remover"> 
+                                                                  <h5 onclick="removeProduct(1, 'produto1')">remover</h5>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div-->
+                              </div>
+                              <div class="carrinho-options">
+                                    <div class="carrinho-button continuarcomprando">
+                                          <div class="button checkout"><a id="button-continuarcomprando" href="../produtos"><h5>Continuar comprando</h5></a></div>
+                                    </div>
+                                    <div class="carrinho-button checkout">
+                                          <div class="button checkout"><a id="button-checkout" href="../checkout"><h5>Finalizar compra</h5></a></div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="extrainfo">
+                        <div class="extrainfo-header">
+                              <h3><b>FALE CONOSCO</b></h3>
+                        </div>
+                        <div class="extrainfo-body">
+                              <div class="extrainfo-info">
+                                    <h4>
+                                          <b>Endereço:</b>
+                                          <br>
+                                          Rua Dom Pedro II, 1889 — Centro, Rio de Janeiro/RJ — CEP: 12345-000
+                                          <br>
+                                          <br>
+                                          Horário de atendimento:
+                                          <br>
+                                          08:00 às 18:00 — Segunda a Sábado, horário de Brasília (exceto domingo e feriados)
+                                    </h4>
+                              </div>
+                              <div class="extrainfo-info">
+                                    <h4><b>Central SAC:</b><br>0800-999-9999</h4>
+                              </div>
+                              <div class="extrainfo-info">
+                                    <h4><b>E-mail:</b><br>atendimento@mubak.com.br</h4>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="footer">
+                        <div class="button-icon">
+                              <a href="https://pt-br.facebook.com/"><img src="../img/facebook.svg"></a>
+                        </div>
+                        <div class="button-icon">
+                              <a href="https://twitter.com/?lang=pt-br"><img src="../img/twitter.svg"></a>
+                        </div>
+                        <div class="button-icon">
+                              <a href="https://br.pinterest.com/"><img src="../img/pinterest.svg"></a>
+                        </div>
+                        <div class="button-icon">
+                              <a href="https://www.instagram.com/"><img src="../img/instagram.svg"></a>
+                        </div>
+                  </div>
+            </div>
+      </body>
+</html>
